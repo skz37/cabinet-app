@@ -1,0 +1,16 @@
+{
+  "id": 14,
+  "patientId": 1,
+  "radiologueId": 5,
+  "dateRadio": "2026-10-29T09:10:00",
+  "fichierRadioUrl": "radios/radio_14.png",
+  "notes": "Contrôle post-pneumonie",
+  "createdAt": "2026-10-29T09:10:00",
+  "updatedAt": "2026-10-29T09:10:00",
+  "status": "PENDING",
+  "typeMaladie": null,
+  "confidence": null,
+  "riskLevel": null,
+  "heatmapUrl": null,
+  "notesRadiologue": null
+}

@@ -1,0 +1,1 @@
+(empty body) — gateway returns HTTP 401 when the token is missing, invalid or expired. Call /auth/refresh then retry once.

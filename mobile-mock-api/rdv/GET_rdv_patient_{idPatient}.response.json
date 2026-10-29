@@ -1,0 +1,72 @@
+{
+  "success": true,
+  "data": [
+    {
+      "id": 24,
+      "idPatient": 1,
+      "idMedecin": 1,
+      "dateRdv": "2026-10-29T15:30:00"
+    },
+    {
+      "id": 22,
+      "idPatient": 1,
+      "idMedecin": 3,
+      "dateRdv": "2026-10-30T09:00:00"
+    },
+    {
+      "id": 19,
+      "idPatient": 1,
+      "idMedecin": 2,
+      "dateRdv": "2026-11-05T11:00:00"
+    },
+    {
+      "id": 20,
+      "idPatient": 1,
+      "idMedecin": 4,
+      "dateRdv": "2026-11-19T16:30:00"
+    },
+    {
+      "id": 15,
+      "idPatient": 1,
+      "idMedecin": 1,
+      "dateRdv": "2026-10-29T08:30:00"
+    },
+    {
+      "id": 13,
+      "idPatient": 1,
+      "idMedecin": 6,
+      "dateRdv": "2026-10-20T14:00:00"
+    },
+    {
+      "id": 9,
+      "idPatient": 1,
+      "idMedecin": 1,
+      "dateRdv": "2026-10-12T10:00:00"
+    },
+    {
+      "id": 6,
+      "idPatient": 1,
+      "idMedecin": 2,
+      "dateRdv": "2026-09-22T11:30:00"
+    },
+    {
+      "id": 4,
+      "idPatient": 1,
+      "idMedecin": 3,
+      "dateRdv": "2026-08-30T08:00:00"
+    },
+    {
+      "id": 2,
+      "idPatient": 1,
+      "idMedecin": 5,
+      "dateRdv": "2026-06-11T13:00:00"
+    },
+    {
+      "id": 1,
+      "idPatient": 1,
+      "idMedecin": 1,
+      "dateRdv": "2026-03-14T08:30:00"
+    }
+  ],
+  "timestamp": "2026-10-29T10:15:30.123456"
+}

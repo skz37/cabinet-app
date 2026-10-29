@@ -1,0 +1,21 @@
+{
+  "id": 8,
+  "patientId": 1,
+  "patientNom": "Benali",
+  "patientPrenom": "Sara",
+  "patientEmail": "sara.benali@example.com",
+  "medecinId": 1,
+  "medecinNom": "Alami",
+  "medecinPrenom": "Youssef",
+  "medecinSpecialite": "GENERALISTE",
+  "typeRapport": "NORMAL",
+  "dateRapport": "2026-10-12T10:20:00",
+  "typeMaladie": "Angine",
+  "observations": "Gorge irritée, fièvre légère (38.2°C) depuis 2 jours.",
+  "traitement": "Amoxicilline 1 g matin et soir pendant 7 jours. Paracétamol 1 g si fièvre.",
+  "diagnostic": "Angine bactérienne",
+  "consultationId": 21,
+  "pdfFileUrl": "rapports/rapport_8.pdf",
+  "createdAt": "2026-10-12T10:20:00",
+  "updatedAt": "2026-10-12T10:20:00"
+}

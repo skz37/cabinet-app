@@ -1,0 +1,12 @@
+{
+  "success": true,
+  "data": {
+    "id": 1,
+    "nom": "Benali",
+    "prenom": "Sara",
+    "email": "sara.benali@example.com",
+    "tel": "0612345678",
+    "dateNaissance": "1995-04-12"
+  },
+  "timestamp": "2026-10-29T10:15:30.123456"
+}

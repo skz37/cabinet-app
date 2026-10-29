@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "data": {
+    "id": 12,
+    "idPatient": 1,
+    "idMedecin": 3,
+    "idRdv": 4,
+    "type": "ANALYSES",
+    "typeMaladie": "Prédiabète",
+    "confidence": 0.78,
+    "riskLevel": "MEDIUM",
+    "observation": "Glycémie à jeun légèrement élevée (1.18 g/L).",
+    "traitement": "Régime pauvre en sucres rapides, 30 min de marche par jour, contrôle dans 3 mois.",
+    "dateConsultation": "2026-08-30T09:00:00"
+  },
+  "timestamp": "2026-10-29T10:15:30.123456"
+}

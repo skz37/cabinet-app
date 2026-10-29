@@ -1,0 +1,10 @@
+{
+  "success": true,
+  "data": {
+    "id": 24,
+    "idPatient": 1,
+    "idMedecin": 1,
+    "dateRdv": "2026-10-29T15:30:00"
+  },
+  "timestamp": "2026-10-29T10:15:30.123456"
+}

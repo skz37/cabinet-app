@@ -1,0 +1,21 @@
+{
+  "id": 12,
+  "patientId": 1,
+  "patientNom": "Benali",
+  "patientPrenom": "Sara",
+  "patientEmail": "sara.benali@example.com",
+  "medecinId": 6,
+  "medecinNom": "Lahlou",
+  "medecinPrenom": "Mehdi",
+  "medecinSpecialite": "GENERALISTE",
+  "typeRapport": "NORMAL",
+  "dateRapport": "2026-10-20T14:25:00",
+  "typeMaladie": "Lombalgie",
+  "observations": "Douleur lombaire basse depuis 1 semaine, sans irradiation. Examen neurologique normal.",
+  "traitement": "Ibuprofène 400 mg 3 fois par jour pendant 5 jours. Kinésithérapie 10 séances.",
+  "diagnostic": "Lombalgie commune",
+  "consultationId": 28,
+  "pdfFileUrl": null,
+  "createdAt": "2026-10-20T14:25:00",
+  "updatedAt": "2026-10-20T14:25:00"
+}

@@ -1,0 +1,10 @@
+{
+  "success": false,
+  "errors": [
+    {
+      "field": null,
+      "message": "Erreur serveur: Refresh token invalide ou expiré"
+    }
+  ],
+  "timestamp": "2026-10-29T10:15:30.123456"
+}

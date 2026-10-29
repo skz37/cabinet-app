@@ -1,0 +1,21 @@
+{
+  "id": 3,
+  "patientId": 1,
+  "patientNom": "Benali",
+  "patientPrenom": "Sara",
+  "patientEmail": "sara.benali@example.com",
+  "medecinId": 3,
+  "medecinNom": "El Fassi",
+  "medecinPrenom": "Nadia",
+  "medecinSpecialite": "GENERALISTE",
+  "typeRapport": "ANALYSES",
+  "dateRapport": "2026-08-30T09:00:00",
+  "typeMaladie": "Prédiabète",
+  "observations": "Glycémie à jeun légèrement élevée (1.18 g/L).",
+  "traitement": "Régime pauvre en sucres rapides, 30 min de marche par jour, contrôle dans 3 mois.",
+  "diagnostic": "Prédiabète",
+  "consultationId": 12,
+  "pdfFileUrl": "rapports/rapport_3.pdf",
+  "createdAt": "2026-08-30T09:00:00",
+  "updatedAt": "2026-08-30T09:00:00"
+}

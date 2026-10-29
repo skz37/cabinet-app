@@ -1,0 +1,10 @@
+{
+  "success": false,
+  "errors": [
+    {
+      "field": "dateRdv",
+      "message": "la date doit etre au future"
+    }
+  ],
+  "timestamp": "2026-10-29T10:15:30.123456"
+}

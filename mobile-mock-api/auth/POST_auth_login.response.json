@@ -1,0 +1,12 @@
+{
+  "success": true,
+  "data": {
+    "accessToken": "eyJhbGciOiJSUzI1NiJ9.MOCK_ACCESS_TOKEN.signature",
+    "refreshToken": "eyJhbGciOiJIUzUxMiJ9.MOCK_REFRESH_TOKEN.signature",
+    "expiresIn": 300
+  },
+  "messages": [
+    "Login successful"
+  ],
+  "timestamp": "2026-10-29T10:15:30.123456"
+}

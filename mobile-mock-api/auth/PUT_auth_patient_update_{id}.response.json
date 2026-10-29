@@ -1,0 +1,19 @@
+{
+  "success": true,
+  "data": {
+    "patient": {
+      "id": 1,
+      "nom": "Benali",
+      "prenom": "Sara",
+      "email": "sara.benali@example.com",
+      "tel": "0698765432",
+      "dateNaissance": "1995-04-12"
+    },
+    "keycloakId": "7b1c2f4e-91d2-4a8e-b0a3-5e8d2c6f1a90",
+    "success": true
+  },
+  "messages": [
+    "Patient et compte mis à jour avec succès"
+  ],
+  "timestamp": "2026-10-29T10:15:30.123456"
+}

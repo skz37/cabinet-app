@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "data": {
+    "id": 3,
+    "idPatient": 1,
+    "idMedecin": 1,
+    "idRdv": 1,
+    "type": "NORMAL",
+    "typeMaladie": "Rhinopharyngite",
+    "confidence": null,
+    "riskLevel": null,
+    "observation": "Nez bouché, toux sèche, pas de fièvre.",
+    "traitement": "Lavage nasal au sérum physiologique, repos.",
+    "dateConsultation": "2026-03-14T08:50:00"
+  },
+  "timestamp": "2026-10-29T10:15:30.123456"
+}

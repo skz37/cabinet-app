@@ -1,0 +1,21 @@
+{
+  "id": 5,
+  "patientId": 1,
+  "patientNom": "Benali",
+  "patientPrenom": "Sara",
+  "patientEmail": "sara.benali@example.com",
+  "medecinId": 2,
+  "medecinNom": "Idrissi",
+  "medecinPrenom": "Karim",
+  "medecinSpecialite": "RADIOLOGUE",
+  "typeRapport": "RADIO",
+  "dateRapport": "2026-09-22T12:05:00",
+  "typeMaladie": "Pneumonia",
+  "observations": "Opacité alvéolaire du lobe inférieur droit, confirmée par le radiologue.",
+  "traitement": "Antibiothérapie et contrôle radiologique dans 3 semaines.",
+  "diagnostic": "Pneumonie du lobe inférieur droit",
+  "consultationId": 17,
+  "pdfFileUrl": "rapports/rapport_5.pdf",
+  "createdAt": "2026-09-22T12:05:00",
+  "updatedAt": "2026-09-22T12:05:00"
+}

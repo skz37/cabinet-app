@@ -1,0 +1,16 @@
+{
+  "id": 7,
+  "patientId": 1,
+  "radiologueId": 2,
+  "dateRadio": "2026-09-22T11:30:00",
+  "fichierRadioUrl": "radios/radio_7.png",
+  "notes": "Fièvre et douleur thoracique",
+  "createdAt": "2026-09-22T11:30:00",
+  "updatedAt": "2026-09-22T11:30:00",
+  "status": "VALIDATED",
+  "typeMaladie": "Pneumonia",
+  "confidence": 0.91,
+  "riskLevel": "HIGH",
+  "heatmapUrl": "heatmaps/heatmap_7.png",
+  "notesRadiologue": "Résultat confirmé. Opacité du lobe inférieur droit."
+}

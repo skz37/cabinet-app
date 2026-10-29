@@ -1,0 +1,21 @@
+{
+  "id": 1,
+  "patientId": 1,
+  "patientNom": "Benali",
+  "patientPrenom": "Sara",
+  "patientEmail": "sara.benali@example.com",
+  "medecinId": 1,
+  "medecinNom": "Alami",
+  "medecinPrenom": "Youssef",
+  "medecinSpecialite": "GENERALISTE",
+  "typeRapport": "ANALYSES",
+  "dateRapport": "2026-03-14T09:30:00",
+  "typeMaladie": "Bilan normal",
+  "observations": "Bilan sanguin de routine dans les normes.",
+  "traitement": "Aucun traitement. Prochain bilan dans 6 mois.",
+  "diagnostic": "Bilan biologique normal",
+  "consultationId": 5,
+  "pdfFileUrl": "rapports/rapport_1.pdf",
+  "createdAt": "2026-03-14T09:30:00",
+  "updatedAt": "2026-03-14T09:30:00"
+}

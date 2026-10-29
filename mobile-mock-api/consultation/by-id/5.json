@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "data": {
+    "id": 5,
+    "idPatient": 1,
+    "idMedecin": 1,
+    "idRdv": null,
+    "type": "ANALYSES",
+    "typeMaladie": "Bilan normal",
+    "confidence": 0.88,
+    "riskLevel": "LOW",
+    "observation": "Bilan sanguin de routine dans les normes.",
+    "traitement": "Aucun traitement. Prochain bilan dans 6 mois.",
+    "dateConsultation": "2026-03-14T09:30:00"
+  },
+  "timestamp": "2026-10-29T10:15:30.123456"
+}

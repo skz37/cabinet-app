@@ -1,0 +1,10 @@
+{
+  "success": false,
+  "errors": [
+    {
+      "field": null,
+      "message": "Le RDV doit être sur un créneau de 30 minutes (ex: 09h00 ou 09h30)."
+    }
+  ],
+  "timestamp": "2026-10-29T10:15:30.123456"
+}

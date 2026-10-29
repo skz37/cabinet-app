@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "data": {
+    "id": 8,
+    "idPatient": 1,
+    "idMedecin": 5,
+    "idRdv": 2,
+    "type": "RADIO",
+    "typeMaladie": "Normal",
+    "confidence": 0.96,
+    "riskLevel": "LOW",
+    "observation": "Radiographie thoracique sans anomalie.",
+    "traitement": "Aucun traitement nécessaire.",
+    "dateConsultation": "2026-06-11T13:40:00"
+  },
+  "timestamp": "2026-10-29T10:15:30.123456"
+}

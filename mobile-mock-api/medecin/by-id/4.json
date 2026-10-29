@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "data": {
+    "id": 4,
+    "nom": "Berrada",
+    "prenom": "Hicham",
+    "email": "h.berrada@mediflow.ma",
+    "tel": "0661000004",
+    "dateNaissance": "1975-12-01",
+    "role": "MEDECIN",
+    "staffId": 9,
+    "specialite": "GENERALISTE"
+  },
+  "timestamp": "2026-10-29T10:15:30.123456"
+}

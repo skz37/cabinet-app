@@ -1,0 +1,19 @@
+{
+  "success": true,
+  "data": {
+    "patient": {
+      "id": 3,
+      "nom": "Tazi",
+      "prenom": "Lina",
+      "email": "lina.tazi@example.com",
+      "tel": "0655443322",
+      "dateNaissance": "2001-01-08"
+    },
+    "keycloakId": "c4d1e8a2-6f3b-4b7e-9a1d-2e5f8c0b7d43",
+    "success": true
+  },
+  "messages": [
+    "Patient et compte créés avec succès"
+  ],
+  "timestamp": "2026-10-29T10:15:30.123456"
+}

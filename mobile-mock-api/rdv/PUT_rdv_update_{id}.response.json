@@ -1,0 +1,13 @@
+{
+  "success": true,
+  "data": {
+    "id": 25,
+    "idPatient": 1,
+    "idMedecin": 1,
+    "dateRdv": "2026-11-06T15:00:00"
+  },
+  "messages": [
+    "rdv modifie avec succes"
+  ],
+  "timestamp": "2026-10-29T10:15:30.123456"
+}

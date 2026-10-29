@@ -1,0 +1,26 @@
+{
+  "success": false,
+  "errors": [
+    {
+      "field": "nom",
+      "message": "nom obligatoire"
+    },
+    {
+      "field": "tel",
+      "message": "Le numéro de téléphone doit etre correcte"
+    },
+    {
+      "field": "email",
+      "message": "must be a well-formed email address"
+    },
+    {
+      "field": "dateNaissance",
+      "message": "La date de naissance doit être dans le passé"
+    },
+    {
+      "field": "password",
+      "message": "Le mot de passe est obligatoire"
+    }
+  ],
+  "timestamp": "2026-10-29T10:15:30.123456"
+}

@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "data": {
+    "id": 31,
+    "idPatient": 1,
+    "idMedecin": 1,
+    "idRdv": 15,
+    "type": "NORMAL",
+    "typeMaladie": null,
+    "confidence": null,
+    "riskLevel": null,
+    "observation": null,
+    "traitement": null,
+    "dateConsultation": "2026-10-29T08:35:00"
+  },
+  "timestamp": "2026-10-29T10:15:30.123456"
+}

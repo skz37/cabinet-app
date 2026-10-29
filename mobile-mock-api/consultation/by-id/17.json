@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "data": {
+    "id": 17,
+    "idPatient": 1,
+    "idMedecin": 2,
+    "idRdv": 6,
+    "type": "RADIO",
+    "typeMaladie": "Pneumonia",
+    "confidence": 0.91,
+    "riskLevel": "HIGH",
+    "observation": "Opacité alvéolaire du lobe inférieur droit, confirmée par le radiologue.",
+    "traitement": "Antibiothérapie et contrôle radiologique dans 3 semaines.",
+    "dateConsultation": "2026-09-22T12:05:00"
+  },
+  "timestamp": "2026-10-29T10:15:30.123456"
+}

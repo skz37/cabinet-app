@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "data": {
+    "id": 21,
+    "idPatient": 1,
+    "idMedecin": 1,
+    "idRdv": 9,
+    "type": "NORMAL",
+    "typeMaladie": "Angine",
+    "confidence": null,
+    "riskLevel": null,
+    "observation": "Gorge irritée, fièvre légère (38.2°C) depuis 2 jours.",
+    "traitement": "Amoxicilline 1 g matin et soir pendant 7 jours. Paracétamol 1 g si fièvre.",
+    "dateConsultation": "2026-10-12T10:20:00"
+  },
+  "timestamp": "2026-10-29T10:15:30.123456"
+}

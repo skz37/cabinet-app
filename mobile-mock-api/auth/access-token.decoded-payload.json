@@ -1,0 +1,17 @@
+{
+  "exp": 1793282730,
+  "iat": 1793282430,
+  "sub": "7b1c2f4e-91d2-4a8e-b0a3-5e8d2c6f1a90",
+  "email": "sara.benali@example.com",
+  "given_name": "Sara",
+  "family_name": "Benali",
+  "preferred_username": "sara.benali@example.com",
+  "internalId": 1,
+  "realm_access": {
+    "roles": [
+      "PATIENT",
+      "offline_access",
+      "default-roles-clinique"
+    ]
+  }
+}

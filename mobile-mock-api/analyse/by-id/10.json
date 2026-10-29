@@ -1,0 +1,17 @@
+{
+  "id": 10,
+  "patientId": 1,
+  "age": 31,
+  "sexe": "FEMME",
+  "glycemieJeun": 1.62,
+  "hemoglobine": null,
+  "globulesBlancs": null,
+  "cholesterolTotal": 2.6,
+  "creatinine": null,
+  "tensionSystolique": 150,
+  "tensionDiastolique": 95,
+  "frequenceCardiaque": 88,
+  "temperature": null,
+  "imc": 29.8,
+  "dateAnalyse": "2026-10-28T09:00:00"
+}

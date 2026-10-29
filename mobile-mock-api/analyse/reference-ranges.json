@@ -1,0 +1,53 @@
+{
+  "_note": "Not returned by the backend. Suggested normal ranges for the range bars (adult).",
+  "glycemieJeun": {
+    "unit": "g/L",
+    "min": 0.7,
+    "max": 1.1
+  },
+  "hemoglobine": {
+    "unit": "g/dL",
+    "min": 12,
+    "max": 16
+  },
+  "globulesBlancs": {
+    "unit": "/mm³",
+    "min": 4000,
+    "max": 10000
+  },
+  "cholesterolTotal": {
+    "unit": "g/L",
+    "min": 1.5,
+    "max": 2
+  },
+  "creatinine": {
+    "unit": "mg/L",
+    "min": 6,
+    "max": 12
+  },
+  "tensionSystolique": {
+    "unit": "mmHg",
+    "min": 90,
+    "max": 130
+  },
+  "tensionDiastolique": {
+    "unit": "mmHg",
+    "min": 60,
+    "max": 85
+  },
+  "frequenceCardiaque": {
+    "unit": "bpm",
+    "min": 60,
+    "max": 100
+  },
+  "temperature": {
+    "unit": "°C",
+    "min": 36.1,
+    "max": 37.5
+  },
+  "imc": {
+    "unit": "kg/m²",
+    "min": 18.5,
+    "max": 25
+  }
+}

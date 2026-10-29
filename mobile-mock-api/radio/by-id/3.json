@@ -1,0 +1,16 @@
+{
+  "id": 3,
+  "patientId": 1,
+  "radiologueId": 2,
+  "dateRadio": "2026-03-02T10:00:00",
+  "fichierRadioUrl": "radios/radio_3.png",
+  "notes": "Contact COVID",
+  "createdAt": "2026-03-02T10:00:00",
+  "updatedAt": "2026-03-02T10:00:00",
+  "status": "VALIDATED",
+  "typeMaladie": "Normal",
+  "confidence": 0.71,
+  "riskLevel": "LOW",
+  "heatmapUrl": "heatmaps/heatmap_3.png",
+  "notesRadiologue": "IA : COVID19 (0.55). Résultat modifié par le radiologue : Normal."
+}

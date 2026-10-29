@@ -1,0 +1,16 @@
+{
+  "id": 11,
+  "patientId": 1,
+  "radiologueId": 2,
+  "dateRadio": "2026-10-27T16:00:00",
+  "fichierRadioUrl": "radios/radio_11.png",
+  "notes": "Toux persistante",
+  "createdAt": "2026-10-27T16:00:00",
+  "updatedAt": "2026-10-27T16:00:00",
+  "status": "PREDICTED",
+  "typeMaladie": "Normal",
+  "confidence": 0.84,
+  "riskLevel": "LOW",
+  "heatmapUrl": "heatmaps/heatmap_11.png",
+  "notesRadiologue": null
+}

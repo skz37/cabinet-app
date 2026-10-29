@@ -1,0 +1,10 @@
+{
+  "success": false,
+  "errors": [
+    {
+      "field": null,
+      "message": "Le RDV doit être entre 08h00 et 17h00."
+    }
+  ],
+  "timestamp": "2026-10-29T10:15:30.123456"
+}

@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "data": {
+    "id": 1,
+    "nom": "Alami",
+    "prenom": "Youssef",
+    "email": "y.alami@mediflow.ma",
+    "tel": "0661000001",
+    "dateNaissance": "1980-02-15",
+    "role": "MEDECIN",
+    "staffId": 3,
+    "specialite": "GENERALISTE"
+  },
+  "timestamp": "2026-10-29T10:15:30.123456"
+}

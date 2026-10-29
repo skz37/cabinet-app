@@ -1,0 +1,16 @@
+{
+  "id": 5,
+  "patientId": 1,
+  "radiologueId": 5,
+  "dateRadio": "2026-06-11T13:00:00",
+  "fichierRadioUrl": "radios/radio_5.png",
+  "notes": "Bilan pré-opératoire",
+  "createdAt": "2026-06-11T13:00:00",
+  "updatedAt": "2026-06-11T13:00:00",
+  "status": "VALIDATED",
+  "typeMaladie": "Normal",
+  "confidence": 0.96,
+  "riskLevel": "LOW",
+  "heatmapUrl": "heatmaps/heatmap_5.png",
+  "notesRadiologue": "Aucune anomalie."
+}

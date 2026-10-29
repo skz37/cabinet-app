@@ -1,0 +1,72 @@
+{
+  "success": true,
+  "data": [
+    {
+      "id": 1,
+      "nom": "Alami",
+      "prenom": "Youssef",
+      "email": "y.alami@mediflow.ma",
+      "tel": "0661000001",
+      "dateNaissance": "1980-02-15",
+      "role": "MEDECIN",
+      "staffId": 3,
+      "specialite": "GENERALISTE"
+    },
+    {
+      "id": 2,
+      "nom": "Idrissi",
+      "prenom": "Karim",
+      "email": "k.idrissi@mediflow.ma",
+      "tel": "0661000002",
+      "dateNaissance": "1978-09-03",
+      "role": "MEDECIN",
+      "staffId": 5,
+      "specialite": "RADIOLOGUE"
+    },
+    {
+      "id": 3,
+      "nom": "El Fassi",
+      "prenom": "Nadia",
+      "email": "n.elfassi@mediflow.ma",
+      "tel": "0661000003",
+      "dateNaissance": "1986-06-21",
+      "role": "MEDECIN",
+      "staffId": 7,
+      "specialite": "GENERALISTE"
+    },
+    {
+      "id": 4,
+      "nom": "Berrada",
+      "prenom": "Hicham",
+      "email": "h.berrada@mediflow.ma",
+      "tel": "0661000004",
+      "dateNaissance": "1975-12-01",
+      "role": "MEDECIN",
+      "staffId": 9,
+      "specialite": "GENERALISTE"
+    },
+    {
+      "id": 5,
+      "nom": "Chraibi",
+      "prenom": "Salma",
+      "email": "s.chraibi@mediflow.ma",
+      "tel": "0661000005",
+      "dateNaissance": "1990-03-17",
+      "role": "MEDECIN",
+      "staffId": 11,
+      "specialite": "RADIOLOGUE"
+    },
+    {
+      "id": 6,
+      "nom": "Lahlou",
+      "prenom": "Mehdi",
+      "email": "m.lahlou@mediflow.ma",
+      "tel": "0661000006",
+      "dateNaissance": "1983-07-29",
+      "role": "MEDECIN",
+      "staffId": 13,
+      "specialite": "GENERALISTE"
+    }
+  ],
+  "timestamp": "2026-10-29T10:15:30.123456"
+}
