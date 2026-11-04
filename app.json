@@ -1,19 +1,19 @@
 {
   "expo": {
-    "name": "minimal",
-    "slug": "minimal",
+    "name": "MediFlow",
+    "slug": "mediflow-patient",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "minimal",
+    "scheme": "mediflow",
     "userInterfaceStyle": "automatic",
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "ma.mediflow.patient"
     },
     "android": {
+      "package": "ma.mediflow.patient",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -31,7 +31,7 @@
         {
           "image": "./assets/images/splash.png",
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "backgroundColor": "#0F766E"
         }
       ],
       "expo-status-bar",
