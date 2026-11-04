@@ -1,0 +1,8 @@
+# Same line endings (LF) on Windows, macOS, Linux and CI, so Prettier agrees everywhere.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.ttf binary
+*.otf binary
+*.pdf binary

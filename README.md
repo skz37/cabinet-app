@@ -1,73 +1,96 @@
-# Minimal Uniwind Template
+# MediFlow Patient
 
-This is a [React Native](https://reactnative.dev/) project built with [Expo](https://expo.dev/) and [React Native Reusables](https://reactnativereusables.com).
+Patient mobile app for the MediFlow clinic: appointments, medical record (consultations, reports, X-rays, lab results) and profile. Built with Expo (React Native), Expo Router, Uniwind (Tailwind) and React Native Reusables. Runs on iOS, Android and web.
 
-It was initialized using the following command, then the `Minimal (Uniwind)` template was selected when prompted:
+## Getting started
 
-```bash
-npx @react-native-reusables/cli@latest init
-```
-
-## Getting Started
-
-To run the development server:
+Requirements: Node 22 or later, and the Expo Go app on your phone (or an Android emulator / iOS simulator).
 
 ```bash
-    npm run dev
-    # or
-    yarn dev
-    # or
-    pnpm dev
-    # or
-    bun dev
+git clone <repo-url>
+cd cabinet-app
+npm install
+npm run dev
 ```
 
-This will start the Expo Dev Server. Open the app in:
+Scan the QR code with Expo Go, or press `a` (Android), `i` (iOS, Mac only) or `w` (web).
 
-- **iOS**: press `i` to launch in the iOS simulator _(Mac only)_
-- **Android**: press `a` to launch in the Android emulator
-- **Web**: press `w` to run in a browser
+The app runs on mock data by default. Sign in with `sara.benali@example.com` / `Patient@123`.
 
-You can also scan the QR code using the [Expo Go](https://expo.dev/go) app on your device. This project fully supports running in Expo Go for quick testing on physical devices.
+## Scripts
 
-## Adding components
+| Script                 | What it does                                          |
+| ---------------------- | ----------------------------------------------------- |
+| `npm run dev`          | Starts the Expo dev server (cache cleared)            |
+| `npm run check`        | Typecheck, lint and format check: run before every PR |
+| `npm run typecheck`    | TypeScript only                                       |
+| `npm run lint`         | ESLint (Expo config)                                  |
+| `npm run format`       | Formats every file with Prettier                      |
+| `npm run format:check` | Checks formatting without changing files              |
 
-You can add more reusable components using the CLI:
+CI runs `typecheck`, `lint`, `format:check` and an Android bundle build on every pull request to `main`.
+
+## Environment and mock data
+
+Copy `.env.example` to `.env.local` (git-ignored) to change these, then restart `npm run dev`:
+
+| Variable                    | Default                 | Meaning                                         |
+| --------------------------- | ----------------------- | ----------------------------------------------- |
+| `EXPO_PUBLIC_API_URL`       | `http://localhost:9222` | Backend gateway                                 |
+| `EXPO_PUBLIC_USE_MOCKS`     | `true`                  | `true` = JSON files in `mobile-mock-api/`       |
+| `EXPO_PUBLIC_MOCK_SCENARIO` | `normal`                | `normal`, `empty`, `error` or `expired` (below) |
+
+| Scenario  | Data                                        |
+| --------- | ------------------------------------------- |
+| `normal`  | Sara Benali, full history                   |
+| `empty`   | Lina Tazi, new patient, every list empty    |
+| `error`   | Every data call fails with a 500            |
+| `expired` | Login works, the silent token refresh fails |
+
+In mock mode, "now" is 29 Oct 2026 10:15: always use `now()` from `shared/lib/clock` to compare with API dates. The mock API itself is documented in [mobile-mock-api/README.md](mobile-mock-api/README.md).
+
+## Project structure
+
+```
+app/                  Expo Router screens (routes)
+components/ui/        Shared UI components (React Native Reusables)
+features/
+  auth/               Login, session, password            Mohammed KASMI
+  home/               Accueil                             Ibrahim OUSGHIR
+  profile/            Profil, Mes informations, notifications   Ibrahim OUSGHIR
+  appointments/       Rendez-vous, booking                Mohammed Amine SABOUNI
+  record/             Consultations, reports, X-rays, lab results   Abdessamad EL GAHSS
+shared/
+  api/                HTTP client and ApiError
+  config/             Environment
+  lib/                Clock, JWT, secure storage
+  mocks/              Mock registry and helpers
+  store/              Settings store and store helpers
+mobile-mock-api/      Mock backend responses (JSON)
+```
+
+Inside a feature: `types.ts` (data shapes), `services/` (API calls, mock or real), `store/` (Zustand). Screens read stores; they never import mock files.
+
+## UI components
+
+Shared components come from [React Native Reusables](https://reactnativereusables.com). Add one with:
 
 ```bash
-npx react-native-reusables/cli@latest add [...components]
+npx @react-native-reusables/cli@latest add <component>
 ```
 
-> e.g. `npx react-native-reusables/cli@latest add input textarea`
+It lands in `components/ui/`. Build a custom component only when RNR has none (date strip, slot grid, stepper, lab range bar). Only Mohammed merges changes to `components/ui/`.
 
-If you don't specify any component names, you'll be prompted to select which components to add interactively. Use the `--all` flag to install all available components at once.
+## Team workflow
 
-## Project Features
+- One branch per task: `feature/<TASK-ID>-short-name`, e.g. `feature/R07-slot-grid`.
+- The pull request title starts with the task ID, e.g. `R07 · Choisir un créneau`.
+- `npm run check` must pass. One teammate reviews every pull request; Mohammed reviews anything touching shared components, navigation, `shared/` or `features/auth/`.
+- Patients never see an AI prediction: no risk level, no confidence, and an X-ray shows a result only once the radiologist has validated it.
 
-- ⚛️ Built with [Expo Router](https://expo.dev/router)
-- 🎨 Styled with [Tailwind CSS](https://tailwindcss.com/) via [Uniwind](https://uniwind.dev/)
-- 📦 UI powered by [React Native Reusables](https://github.com/founded-labs/react-native-reusables)
-- 🚀 New Architecture enabled
-- 🔥 Edge to Edge enabled
-- 📱 Runs on iOS, Android, and Web
-
-## Learn More
-
-To dive deeper into the technologies used:
-
-- [React Native Docs](https://reactnative.dev/docs/getting-started)
-- [Expo Docs](https://docs.expo.dev/)
-- [Uniwind Docs](https://docs.uniwind.dev/)
-- [React Native Reusables](https://reactnativereusables.com)
-
-## Deploy with EAS
-
-The easiest way to deploy your app is with [Expo Application Services (EAS)](https://expo.dev/eas).
-
-- [EAS Build](https://docs.expo.dev/build/introduction/)
-- [EAS Updates](https://docs.expo.dev/eas-update/introduction/)
-- [EAS Submit](https://docs.expo.dev/submit/introduction/)
-
----
-
-If you enjoy using React Native Reusables, please consider giving it a ⭐ on [GitHub](https://github.com/founded-labs/react-native-reusables). Your support means a lot!
+| Member                 | Area                                  | Tasks   |
+| ---------------------- | ------------------------------------- | ------- |
+| Mohammed KASMI         | Tech lead, foundation, authentication | F01–F12 |
+| Ibrahim OUSGHIR        | Accueil, notifications, profile       | H01–H09 |
+| Mohammed Amine SABOUNI | Appointments and booking              | R01–R10 |
+| Abdessamad EL GAHSS    | Medical record                        | D01–D10 |
