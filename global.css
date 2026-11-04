@@ -3,12 +3,60 @@
 
 @import 'tw-animate-css';
 
+/*
+ * MediFlow design tokens (« Design tokens » board). Use the classes, never hex values:
+ *   colours  bg-primary, text-muted-foreground, bg-success-soft, border-input…
+ *   type     text-display, text-title-1/2/3, text-body, text-button, text-caption, text-chip
+ *   weight   font-normal / medium / semibold / bold / extrabold (each loads its Figtree file)
+ *   radius   rounded-input (12), rounded-button (14), rounded-card (16), rounded-sheet (24)
+ *   shadow   shadow-e1 (cards), shadow-e2 (floating button), shadow-e3 (sheets, dialogs)
+ *   spacing  Tailwind's base 4: 1 = 4px (xs), 2 = 8 (s), 3 = 12 (sm), 4 = 16 (m),
+ *            5 = 20 (ml), 6 = 24 (l), 8 = 32 (xl), 12 = 48 (xxl)
+ */
 @theme {
-  --radius: 10px;
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
+  /* React Native needs one font file per weight, so each weight is a font family. */
+  --font-sans: 'Figtree_400Regular';
+  --font-normal: 'Figtree_400Regular';
+  --font-medium: 'Figtree_500Medium';
+  --font-semibold: 'Figtree_600SemiBold';
+  --font-bold: 'Figtree_700Bold';
+  --font-extrabold: 'Figtree_800ExtraBold';
+
+  /* Type scale: size / line height. Body text never goes below 16px. */
+  --text-display: 32px;
+  --text-display--line-height: 38px;
+  --text-display--letter-spacing: -0.64px;
+  --text-title-1: 24px;
+  --text-title-1--line-height: 30px;
+  --text-title-2: 20px;
+  --text-title-2--line-height: 26px;
+  --text-title-3: 17px;
+  --text-title-3--line-height: 24px;
+  --text-body: 16px;
+  --text-body--line-height: 24px;
+  --text-button: 17px;
+  --text-button--line-height: 24px;
+  --text-caption: 14px;
+  --text-caption--line-height: 20px;
+  --text-chip: 13px;
+  --text-chip--line-height: 16px;
+
+  /* Radius. sm/md/lg/xl keep React Native Reusables components on the same scale. */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 14px;
+  --radius-xl: 16px;
+  --radius-2xl: 20px;
+  --radius-3xl: 24px;
+  --radius-input: 12px;
+  --radius-button: 14px;
+  --radius-card: 16px;
+  --radius-sheet: 24px;
+
+  /* Elevation */
+  --shadow-e1: 0 1px 2px rgba(14, 31, 34, 0.06), 0 1px 1px rgba(14, 31, 34, 0.04);
+  --shadow-e2: 0 4px 16px rgba(14, 31, 34, 0.1);
+  --shadow-e3: 0 12px 32px rgba(14, 31, 34, 0.18);
 
   --spacing-hairline: hairlineWidth();
 }
@@ -16,71 +64,98 @@
 @layer theme {
   :root {
     @variant light {
-      --color-background: oklch(1 0 0);
-      --color-foreground: oklch(0.145 0 0);
-      --color-card: oklch(1 0 0);
-      --color-card-foreground: oklch(0.145 0 0);
-      --color-popover: oklch(1 0 0);
-      --color-popover-foreground: oklch(0.145 0 0);
-      --color-primary: oklch(0.205 0 0);
-      --color-primary-foreground: oklch(0.985 0 0);
-      --color-secondary: oklch(0.97 0 0);
-      --color-secondary-foreground: oklch(0.205 0 0);
-      --color-muted: oklch(0.97 0 0);
-      --color-muted-foreground: oklch(0.556 0 0);
-      --color-accent: oklch(0.97 0 0);
-      --color-accent-foreground: oklch(0.205 0 0);
-      --color-destructive: oklch(0.577 0.245 27.325);
-      --color-border: oklch(0.922 0 0);
-      --color-input: oklch(0.922 0 0);
-      --color-ring: oklch(0.708 0 0);
-      --color-chart-1: oklch(0.646 0.222 41.116);
-      --color-chart-2: oklch(0.6 0.118 184.704);
-      --color-chart-3: oklch(0.398 0.07 227.392);
-      --color-chart-4: oklch(0.828 0.189 84.429);
-      --color-chart-5: oklch(0.769 0.188 70.08);
-      --color-sidebar: oklch(0.985 0 0);
-      --color-sidebar-foreground: oklch(0.145 0 0);
-      --color-sidebar-primary: oklch(0.205 0 0);
-      --color-sidebar-primary-foreground: oklch(0.985 0 0);
-      --color-sidebar-accent: oklch(0.97 0 0);
-      --color-sidebar-accent-foreground: oklch(0.205 0 0);
-      --color-sidebar-border: oklch(0.922 0 0);
-      --color-sidebar-ring: oklch(0.708 0 0);
+      /* Surfaces and text */
+      --color-background: #f4f7f7;
+      --color-foreground: #0e1f22;
+      --color-card: #ffffff;
+      --color-card-foreground: #0e1f22;
+      --color-popover: #ffffff;
+      --color-popover-foreground: #0e1f22;
+      --color-muted: #eef2f2;
+      --color-muted-foreground: #4a5c60;
+      --color-border: #e6eced;
+      --color-input: #c9d5d7;
+      --color-ring: #0f766e;
+
+      /* Brand */
+      --color-primary: #0f766e;
+      --color-primary-foreground: #ffffff;
+      --color-primary-pressed: #0b5e58;
+      --color-primary-soft: #e3f2f0;
+      --color-primary-soft-foreground: #0b5e58;
+      --color-mint: #5eead4;
+      --color-secondary: #e3f2f0;
+      --color-secondary-foreground: #0b5e58;
+      --color-accent: #e3f2f0;
+      --color-accent-foreground: #0b5e58;
+
+      /* Status: always shown with a word, never colour alone */
+      --color-destructive: #b91c1c;
+      --color-destructive-foreground: #ffffff;
+      --color-danger: #991b1b;
+      --color-danger-soft: #fee2e2;
+      --color-success: #166534;
+      --color-success-soft: #dcfce7;
+      --color-warning: #92400e;
+      --color-warning-soft: #fef3c7;
+      --color-info: #1e3a8a;
+      --color-info-soft: #e8eefb;
+
+      /* Feedback and states */
+      --color-inverse: #0e1f22;
+      --color-inverse-foreground: #ffffff;
+      --color-banner: #24373b;
+      --color-banner-foreground: #ffffff;
+      --color-skeleton: #e9eeef;
+      --color-disabled: #e1e8e9;
+      --color-disabled-foreground: #5b6c70;
+      --color-overlay: rgba(14, 31, 34, 0.55);
     }
 
     @variant dark {
-      --color-background: oklch(0.145 0 0);
-      --color-foreground: oklch(0.985 0 0);
-      --color-card: oklch(0.205 0 0);
-      --color-card-foreground: oklch(0.985 0 0);
-      --color-popover: oklch(0.205 0 0);
-      --color-popover-foreground: oklch(0.985 0 0);
-      --color-primary: oklch(0.922 0 0);
-      --color-primary-foreground: oklch(0.205 0 0);
-      --color-secondary: oklch(0.269 0 0);
-      --color-secondary-foreground: oklch(0.985 0 0);
-      --color-muted: oklch(0.269 0 0);
-      --color-muted-foreground: oklch(0.708 0 0);
-      --color-accent: oklch(0.269 0 0);
-      --color-accent-foreground: oklch(0.985 0 0);
-      --color-destructive: oklch(0.704 0.191 22.216);
-      --color-border: oklch(1 0 0 / 10%);
-      --color-input: oklch(1 0 0 / 15%);
-      --color-ring: oklch(0.556 0 0);
-      --color-chart-1: oklch(0.488 0.243 264.376);
-      --color-chart-2: oklch(0.696 0.17 162.48);
-      --color-chart-3: oklch(0.769 0.188 70.08);
-      --color-chart-4: oklch(0.627 0.265 303.9);
-      --color-chart-5: oklch(0.645 0.246 16.439);
-      --color-sidebar: oklch(0.205 0 0);
-      --color-sidebar-foreground: oklch(0.985 0 0);
-      --color-sidebar-primary: oklch(0.488 0.243 264.376);
-      --color-sidebar-primary-foreground: oklch(0.985 0 0);
-      --color-sidebar-accent: oklch(0.269 0 0);
-      --color-sidebar-accent-foreground: oklch(0.985 0 0);
-      --color-sidebar-border: oklch(1 0 0 / 10%);
-      --color-sidebar-ring: oklch(0.556 0 0);
+      /* Values marked « derived » are not on the board (only Accueil is drawn in dark). */
+      --color-background: #0b1416;
+      --color-foreground: #e6eeef;
+      --color-card: #132124;
+      --color-card-foreground: #e6eeef;
+      --color-popover: #132124;
+      --color-popover-foreground: #e6eeef;
+      --color-muted: #1b2a2d; /* derived */
+      --color-muted-foreground: #a9bbbe;
+      --color-border: #2a3b3f;
+      --color-input: #3a4e52; /* derived */
+      --color-ring: #2dd4bf;
+
+      --color-primary: #2dd4bf;
+      --color-primary-foreground: #04201d;
+      --color-primary-pressed: #14b8a6;
+      --color-primary-soft: #123a37;
+      --color-primary-soft-foreground: #99e9dc;
+      --color-mint: #5eead4;
+      --color-secondary: #123a37;
+      --color-secondary-foreground: #99e9dc;
+      --color-accent: #123a37;
+      --color-accent-foreground: #99e9dc;
+
+      --color-destructive: #f87171;
+      --color-destructive-foreground: #1a0b0b;
+      --color-danger: #fca5a5; /* derived */
+      --color-danger-soft: #3b1414; /* derived */
+      --color-success: #86efac; /* derived */
+      --color-success-soft: #14301f; /* derived */
+      --color-warning: #fcd34d; /* derived */
+      --color-warning-soft: #3a2a0b; /* derived */
+      --color-info: #a5bff7; /* derived */
+      --color-info-soft: #1a2747; /* derived */
+
+      --color-inverse: #e6eeef;
+      --color-inverse-foreground: #0b1416;
+      --color-banner: #2a3b3f; /* derived */
+      --color-banner-foreground: #e6eeef;
+      --color-skeleton: #1e2e31; /* derived */
+      --color-disabled: #22323a;
+      --color-disabled-foreground: #7e898c;
+      --color-overlay: rgba(0, 0, 0, 0.6);
     }
   }
 }

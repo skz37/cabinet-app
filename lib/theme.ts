@@ -1,63 +1,47 @@
 import { DarkTheme, DefaultTheme, type Theme } from 'expo-router/react-navigation';
 
+/**
+ * MediFlow colours for code that cannot use classes (navigation theme, status bar,
+ * native props such as placeholderTextColor). Keep in sync with global.css.
+ */
 export const THEME = {
   light: {
-    background: 'hsl(0 0% 100%)',
-    foreground: 'hsl(0 0% 3.9%)',
-    card: 'hsl(0 0% 100%)',
-    cardForeground: 'hsl(0 0% 3.9%)',
-    popover: 'hsl(0 0% 100%)',
-    popoverForeground: 'hsl(0 0% 3.9%)',
-    primary: 'hsl(0 0% 9%)',
-    primaryForeground: 'hsl(0 0% 98%)',
-    secondary: 'hsl(0 0% 96.1%)',
-    secondaryForeground: 'hsl(0 0% 9%)',
-    muted: 'hsl(0 0% 96.1%)',
-    mutedForeground: 'hsl(0 0% 45.1%)',
-    accent: 'hsl(0 0% 96.1%)',
-    accentForeground: 'hsl(0 0% 9%)',
-    destructive: 'hsl(0 84.2% 60.2%)',
-    border: 'hsl(0 0% 89.8%)',
-    input: 'hsl(0 0% 89.8%)',
-    ring: 'hsl(0 0% 63%)',
-    radius: '0.625rem',
-    chart1: 'hsl(12 76% 61%)',
-    chart2: 'hsl(173 58% 39%)',
-    chart3: 'hsl(197 37% 24%)',
-    chart4: 'hsl(43 74% 66%)',
-    chart5: 'hsl(27 87% 67%)',
+    background: '#F4F7F7',
+    foreground: '#0E1F22',
+    card: '#FFFFFF',
+    mutedForeground: '#4A5C60',
+    border: '#E6ECED',
+    input: '#C9D5D7',
+    primary: '#0F766E',
+    primaryForeground: '#FFFFFF',
+    primarySoft: '#E3F2F0',
+    destructive: '#B91C1C',
   },
   dark: {
-    background: 'hsl(0 0% 3.9%)',
-    foreground: 'hsl(0 0% 98%)',
-    card: 'hsl(0 0% 3.9%)',
-    cardForeground: 'hsl(0 0% 98%)',
-    popover: 'hsl(0 0% 3.9%)',
-    popoverForeground: 'hsl(0 0% 98%)',
-    primary: 'hsl(0 0% 98%)',
-    primaryForeground: 'hsl(0 0% 9%)',
-    secondary: 'hsl(0 0% 14.9%)',
-    secondaryForeground: 'hsl(0 0% 98%)',
-    muted: 'hsl(0 0% 14.9%)',
-    mutedForeground: 'hsl(0 0% 63.9%)',
-    accent: 'hsl(0 0% 14.9%)',
-    accentForeground: 'hsl(0 0% 98%)',
-    destructive: 'hsl(0 70.9% 59.4%)',
-    border: 'hsl(0 0% 14.9%)',
-    input: 'hsl(0 0% 14.9%)',
-    ring: 'hsl(300 0% 45%)',
-    radius: '0.625rem',
-    chart1: 'hsl(220 70% 50%)',
-    chart2: 'hsl(160 60% 45%)',
-    chart3: 'hsl(30 80% 55%)',
-    chart4: 'hsl(280 65% 60%)',
-    chart5: 'hsl(340 75% 55%)',
+    background: '#0B1416',
+    foreground: '#E6EEEF',
+    card: '#132124',
+    mutedForeground: '#A9BBBE',
+    border: '#2A3B3F',
+    input: '#3A4E52',
+    primary: '#2DD4BF',
+    primaryForeground: '#04201D',
+    primarySoft: '#123A37',
+    destructive: '#F87171',
   },
+};
+
+const FONTS: Theme['fonts'] = {
+  regular: { fontFamily: 'Figtree_400Regular', fontWeight: '400' },
+  medium: { fontFamily: 'Figtree_500Medium', fontWeight: '500' },
+  bold: { fontFamily: 'Figtree_700Bold', fontWeight: '700' },
+  heavy: { fontFamily: 'Figtree_800ExtraBold', fontWeight: '800' },
 };
 
 export const NAV_THEME: Record<'light' | 'dark', Theme> = {
   light: {
     ...DefaultTheme,
+    fonts: FONTS,
     colors: {
       background: THEME.light.background,
       border: THEME.light.border,
@@ -69,6 +53,7 @@ export const NAV_THEME: Record<'light' | 'dark', Theme> = {
   },
   dark: {
     ...DarkTheme,
+    fonts: FONTS,
     colors: {
       background: THEME.dark.background,
       border: THEME.dark.border,
