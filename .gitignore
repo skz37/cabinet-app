@@ -39,3 +39,6 @@ yarn-error.*
 
 expo-env.d.ts
 # @end expo-cli
+# Team docs (kept local, not versioned)
+Task plan.pdf
+MediFlow Patient — App mobile.html
